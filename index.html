@@ -12,174 +12,607 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <title>Sample Bootstrap Design</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <title>Go Green!</title>
 </head>
-<body class="text-bg-dark">
-  <!-- Header -->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-light text-bg-primary">
-            <a class="navbar-brand text-light mx-3" href="index.html">Sample Bootstrap Site</a>
-            <div class="collapse navbar-collapse justify-content-end mx-5">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link text-light" href="index.html">Home</a>
-                  <a class="nav-item nav-link text-light" href="course.html">Course</a>
-                  <a class="nav-item nav-link text-light" href="contact.html">Contact</a>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg pb-2">
+    <div class="container d-flex align-items-center">
+      <a class="navbar-brand text-success fs-3 mt-0 d-flex align-items-center" href="#">
+        <img src="/images/logo.png" alt="logo" class="img-fluid me-2 "/>
+        Go Green!
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn-search text-light me-2" type="submit"><em class="bi bi-search me-1 mb-2"></em></button>
+          <span><i class="bi bi-bag-plus"></i></span>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero py-5">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-6 py-5">
+          <p class="m-0 fw-bold">Organic Products</p>
+          <h1 class="fs-1">Fresh Organic</h1>
+          <div class="line my-4"></div>
+          <p>
+            Organic food is grown without the use of synthetic chemicals,
+             such as human-made pesticides and fertilizers, 
+             and does not contain genetically modified organisms (GMOs). 
+             Organic foods include fresh produce, meats, 
+             and dairy products as well as processed foods such as 
+             crackers, drinks, and frozen meals.
+            </p>
+            <button class="btn-green mt-4">Read More</button>
+              <button class="btn-green mt-4" >
+                <a class="text-decoration-none text-light" href="login.html" type="button">Shop Now</a>
+              </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about py-5">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-5 offset-lg-7 py-5">
+          <p class="m-0 fw-bold">Organic Products</p>
+          <h2>About Our Organic</h2>
+          <div class="line my-4"></div>
+          <p>
+            Organic produce must be grown without the use of chemicals or pesticides. 
+            Farmers must use natural means to control insects and weeds. 
+            Only natural fertilizers, such as compost, are allowed. 
+            After harvesting, farmers cannot treat food with preservatives. 
+            This includes wax.
+          </p>
+          <button class="btn-green mt-4">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome -->
+  <section class="welcome text-center pb-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6 text-light m-auto py-5">
+          <p class="fw-bold">Green Agriculture</p>
+          <h2>Welcome to Organic</h2>
+          <div class="line-white my-4"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illum optio. Suscipit quam voluptates ullam dolorum ex deleniti beatae reprehenderit.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+            <div class="card py-3 rounded">
+              <div class="card-body">
+                <span><em class="bi bi-shop-window"></em></span>
+                <h3 class="my-3">Always Fresh</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card py-3">
+              <div class="card-body">
+                <span><em class="bi bi-flower2"></em></span>
+                <h3 class="my-3">Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card py-3">
+              <div class="card-body">
+                <span><em class="bi bi-gift"></em></span>
+                <h3 class="my-3">100% Organic</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section id="products" class="product text-bg-light">
+    <div class="container text-center py-5">
+      <div class="row">
+        <div class="col-lg-6 m-auto py-5">
+          <h2>Our Best Products</h2>
+          <div class="line my-4"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illum optio. Suscipit quam voluptates ullam dolorum ex deleniti beatae reprehenderit.</p>
+        </div>
+      </div>
+      <div
+            class="d-flex flex-wrap my-2 justify-content-center filter-button-group"
+          >
+            <button class="btn-green m-2 active-filter-btn" data-filter="*">
+              All
+            </button>
+            <button class="btn-green m-2" data-bs-filter=".best">Best Sellers</button>
+            <button class="btn-green m-2" data-bs-filter=".feat">Featured</button>
+        </div>
+      <div class="row">
+        <div class="col-lg-4 mt-2 best">
+          <div class="card">
+            <div class="card-body rounded border border-2 border-success">
+              <div class="star">
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+              </div>
+              <img src="/images/products/orange.jpg" alt="product" class="img-fluid">
+              <p class="text-start fs-3 mb-1">Orange</p>
+              <p class="text-start text-muted mb-1">2 x 454g / 16oz</p>
+              <p class="text-start fs-3">$43.00</p>
+              <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <div class="card">
+            <div class="card-body rounded border border-2 border-success">
+              <div class="star">
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star"></em>
+                <em class="bi bi-star"></em>
+                <em class="bi bi-star"></em>
+                <em class="bi bi-star"></em>
+              </div>
+              <img src="/images/products/papaya.jpg" alt="product" class="img-fluid">
+              <p class="text-start fs-3 mb-1">Papaya</p>
+              <p class="text-start text-muted mb-1">2 x 454g / 16oz</p>
+              <p class="text-start fs-3">$15.00</p>
+              <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2 .feat">
+          <div class="card">
+            <div class="card-body rounded border border-2 border-success">
+              <div class="star">
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star"></em>
+                <em class="bi bi-star"></em>
+              </div>
+              <img src="/images/products/pomegranate.jpg" alt="product" class="img-fluid">
+              <p class="text-start fs-3 mb-1">Pomegranate</p>
+              <p class="text-start text-muted mb-1">2 x 454g / 16oz</p>
+              <p class="text-start fs-3">$25.00</p>
+              <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <div class="card">
+            <div class="card-body rounded border border-2 border-success">
+              <div class="star">
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star"></em>
+              </div>
+              <img src="/images/products/strawberry.jpg" alt="product" class="img-fluid">
+              <p class="text-start fs-3 mb-1">Strawberry</p>
+              <p class="text-start text-muted mb-1">2 x 454g / 16oz</p>
+              <p class="text-start fs-3">$30.00</p>
+              <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <div class="card">
+            <div class="card-body rounded border border-2 border-success">
+              <div class="star">
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star"></em>
+                <em class="bi bi-star"></em>
+                <em class="bi bi-star"></em>
+              </div>
+              <img src="/images/products/melon.jpg" alt="product" class="img-fluid">
+              <p class="text-start fs-3 mb-1">Melon</p>
+              <p class="text-start text-muted mb-1">2 x 454g / 16oz</p>
+              <p class="text-start fs-3">$26.00</p>
+              <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2 best">
+          <div class="card">
+            <div class="card-body rounded border border-2 border-success">
+              <div class="star">
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+                <em class="bi bi-star-fill"></em>
+              </div>
+              <img src="/images/products/red-mango.jpg" alt="product" class="img-fluid">
+              <p class="text-start fs-3 mb-1">Red Mango</p>
+              <p class="text-start text-muted mb-1">2 x 454g / 16oz</p>
+              <p class="text-start fs-3">$55.00</p>
+              <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row text-center py-5">
+        <div class="col-lg-6 m-auto">
+          <button class="btn-green">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discount -->
+  <section class="discount py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-10 m-auto text-center">
+          <span class="fs-2">Discount Coupon for -20%: <strong>KIRK1213</strong></span>
+        </div>
+        <div class="col-lg-2 text-center m-auto">
+          <button class="btn-discount m-3">
+            More Offer
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store -->
+  <section id="services" class="store text-center pb-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6 m-auto py-5">
+          <h2>Our Services</h2>
+          <div class="line my-4"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illum optio. Suscipit quam voluptates ullam dolorum ex deleniti beatae reprehenderit.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+            <div class="card py-3 rounded">
+              <div class="card-body">
+                <span><em class="bi bi-truck"></em></span>
+                <h3 class="my-3">Free Shipping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card py-3">
+              <div class="card-body">
+                <span><em class="bi bi-patch-check"></em></span>
+                <h3 class="my-3">Organic Certified</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card py-3">
+              <div class="card-body">
+                <span><em class="bi bi-wallet"></em></span>
+                <h3 class="my-3">Secure Payment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card py-3">
+              <div class="card-body">
+                <span><em class="bi bi-person-check"></em></span>
+                <h3 class="my-3">Friendly Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, illo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Arrivals -->
+  <section class="arrivals text-bg-light">
+    <div class="container text-center py-5">
+      <div class="row">
+        <div class="col-lg-6 m-auto py-5">
+          <h2>Our Best Products</h2>
+          <div class="line my-4"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, illum optio. Suscipit quam voluptates ullam dolorum ex deleniti beatae reprehenderit.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mt-2">
+          <div class="card py-3 border border-2 border-success">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="/images/arrivals/garlic.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="star text-center">
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
                 </div>
+                <p class="fs-3 mb-1">Garlic</p>
+                <p class="text-muted mb-1">2 x 454g / 16oz</p>
+                <p class="fs-3">$11.00</p>
+                <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
               </div>
-              <div class="d-block d-sm-none">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navmenu"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div class="card py-3 border border-2 border-success">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="/images/arrivals/lemon.jpg" alt="product" class="img-fluid">
               </div>
-        </nav>
-        <div class="collapse navbar-collapse text-bg-primary" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
+              <div class="col-lg-6 text-center">
+                <div class="star text-center">
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star"></em>
+                </div>
+                <p class="fs-3 mb-1">Lemon</p>
+                <p class="text-muted mb-1">2 x 454g / 16oz</p>
+                <p class="fs-3">$14.00</p>
+                <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div class="card py-3 border border-2 border-success">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="/images/arrivals/mint.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="star text-center">
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star"></em>
+                  <em class="bi bi-star"></em>
+                </div>
+                <p class="fs-3 mb-1">Mint</p>
+                <p class="text-muted mb-1">2 x 454g / 16oz</p>
+                <p class="fs-3">$10.00</p>
+                <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div class="card py-3 border border-2 border-success">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="/images/arrivals/onions.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="star text-center">
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                </div>
+                <p class="fs-3 mb-1">Onion</p>
+                <p class="text-muted mb-1">2 x 454g / 16oz</p>
+                <p class="fs-3">$13.00</p>
+                <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div class="card py-3 border border-2 border-success">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="/images/arrivals/apple.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="star text-center">
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star"></em>
+                </div>
+                <p class="fs-3 mb-1">Apple</p>
+                <p class="text-muted mb-1">2 x 454g / 16oz</p>
+                <p class="fs-3">$23.00</p>
+                <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-2">
+          <div class="card py-3 border border-2 border-success">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="/images/arrivals/chili.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="star text-center">
+                  <em class="bi bi-star-fill"></em>
+                  <em class="bi bi-star"></em>
+                  <em class="bi bi-star"></em>
+                  <em class="bi bi-star"></em>
+                  <em class="bi bi-star"></em>
+                </div>
+                <p class="fs-3 mb-1">Chili</p>
+                <p class="text-muted mb-1">2 x 454g / 16oz</p>
+                <p class="fs-3">$15.00</p>
+                <button class="btn-card m-auto d-block fs-5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+      <div class="row text-center py-5">
+        <div class="col-lg-6 m-auto">
+          <button class="btn-green">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Letter -->
+  <section class="newsletter py-5">
+    <div class="container">
+      <div
+        class="d-flex align-items-center justify-content-center flex-column"
+      >
+        <div class="title text-center py-3">
+          <h2 class="position-relative d-inline-block ms-4">
+            Newsletter Subscription
+          </h2>
+        </div>
+
+        <p class="text-center text-muted">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et porro
+          iure totam vero aperiam.
+        </p>
+
+        <div class="input-group mb-3 mt-3 w-75">
+          <input
+            type="text"
+            class="form-control search"
+            placeholder="Enter Your Email ..."
+          />
+          <button class="btn-newsletter" type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---- Footer ---- -->
+  <footer id="contact" class="text-light py-5">
+    <div class="container">
+      <div class="row text-dark g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="index.html" class="brand text-decoration-none text-light">
+            GO GREEN
+          </a>
+          <p class="text-light mt-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            ipsa dolores laudantium harum repellat eligendi quos facilis qui
+            aliquam pariatur.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light text-light">Links</h5>
+          <ul class="list-unstyled">
+            <li class="my-3">
+              <a href="#" class="text-white text-decoration-none">
+                <em class="bi bi-chevron-right me-1"></em> Home
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="course.html" class="nav-link">Course</a>
+            <li class="my-3">
+              <a href="#products" class="text-white text-decoration-none">
+                <em class="bi bi-chevron-right me-1"></em> Products
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
+            <li class="my-3">
+              <a href="#services" class="text-white text-decoration-none">
+                <em class="bi bi-chevron-right me-1"></em> Services
+              </a>
+            </li>
+            <li class="my-3">
+              <a href="#contact" class="text-white text-decoration-none">
+                <em class="bi bi-chevron-right me-1"></em> Contact
+              </a>
             </li>
           </ul>
         </div>
-    </section>
-     <!-- Hero -->
-    <section>
-        <div class="p-5 text-center bg-image rounded-3" style="
-        background-image: url('images/banner.jpg');
-        height: 100vh;
-        ">
-        <div class="mask rounded" style="
-        background-color: rgba(0, 0, 0, 0.6);
-        width: 100%;
-        height: 90vh;">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-                <h1 class="mb-3">Make it Work. Make it Right. Make it Fast.</h1>
-                <h4 class="mb-3">Making website is now one of the easiest thing in the world. You just
-                    need to learn HTML, CSS, Javascript and you are good to go.</h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#heroModal">
-                        Visit Us To Know More
-                    </button>
-            </div>
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light mb-3 text-light">Contact Us</h5>
+          <div
+            class="d-flex justify-content-start align-items-start my-2"
+          >
+            <span class="me-3 text-light"><i class="bi bi-envelope-fill"></i></span>
+            <span class="fw-light text-light">gogreen.support@gmail.com</span>
+          </div>
+          <div
+            class="d-flex justify-content-start align-items-start my-2"
+          >
+            <span class="me-3 text-light"><i class="bi bi-geo-alt-fill"></i></span>
+            <span class="fw-light text-light"
+              >Green Street, Angeles City, Pampanga, Philippines</span
+            >
+          </div>
+          <div
+            class="d-flex justify-content-start align-items-start my-2"
+          >
+            <span class="me-3 text-light"><i class="bi bi-phone-fill"></i></span>
+            <span class="fw-light text-light">0923 4567 890</span>
           </div>
         </div>
-    </section>
-    <!-- Courses -->
-    <section class="container my-5">
-        <div class="text-center my-5 text-light">
-          <h2 class=>Courses</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, nostrum.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-12 my-2 text-center">
-            <div class="card text-bg-secondary">
-              <img class="card-img-top" src="images/html.png" alt="html-image">
-              <div class="card-body">
-                <h5 class="card-title">HTML</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptatibus? Voluptates omnis cumque doloribus inventore.</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    See More
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 my-2 text-center">
-            <div class="card text-bg-secondary">
-              <img class="card-img-top" src="images/css.png" alt="css-image">
-              <div class="card-body">
-                <h5 class="card-title">CSS</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt nihil delectus eaque architecto vitae?</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    See More
-                  </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 my-2 text-center">
-            <div class="card text-bg-secondary">
-              <img class="card-img-top" src="images/javascript.png" alt="js-image">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolorem blanditiis voluptatem sunt illum nostrum?</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    See More
-                  </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Footer -->
-      <section>
-        <footer class="text-bg-dark text-center">
-          <h4>About Us</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente id amet distinctio ipsum quia praesentium!<br />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <div class="icons">
-            <a class="mx-2" href="https://www.facebook.com/" target="_blank"
-              ><em class="bi bi-facebook text-primary mx-1"></em
-            ></a>
-            <a class="mx-2" href="https://www.twitter.com/" target="_blank"
-              ><em class="bi bi-twitter text-primary mx-1"></em
-            ></a>
-            <a class="mx-2" href="https://www.instagram.com/" target="_blank"
-              ><em class="bi bi-instagram text-primary mx-1"></em
-            ></a>
-            <a class="mx-2" href="https://www.linkedin.com/" target="_blank"
-              ><em class="bi bi-linkedin text-primary mx-1"></em
-            ></a>
-          </div>
-            <div class="text-center p-3">
-              <p>© 2022 Created by Engr. Kirk Alyn Santos <em class="bi bi-code-square text-primary mx-1"></em></div></p>
-            </div>
-        </footer>
-      </section>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-bg-dark">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Course Overview</h1>
-          <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-bg-dark">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In consectetur enim natus nisi nesciunt veritatis, nostrum tempore perferendis assumenda illum. Explicabo nostrum commodi ab dicta eaque, laborum, asperiores deleniti aliquid repellendus maxime officia debitis accusantium voluptatum ea consequuntur? Voluptate alias ex odit deserunt autem fugiat optio modi amet obcaecati pariatur.
-        </div>
-        <div class="modal-footer text-bg-dark">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="col-md-6 col-lg-3">
+          <h5 class="fw-light mb-3 text-light">Follow Us</h5>
+          <ul class="list-unstyled d-flex">
+            <li class="text-decoration-none text-light fs-4 me-4">
+              <i class="bi bi-facebook"></i>
+            </li>
+            <li class="text-decoration-none text-light fs-4 me-4">
+              <i class="bi bi-twitter"></i>
+            </li>
+            <li class="text-decoration-none text-light fs-4 me-4">
+              <i class="bi bi-instagram"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-  <div class="modal fade" id="heroModal" tabindex="-1" aria-labelledby="heroModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header text-bg-dark">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">More Information</h1>
-          <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-bg-dark">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi quae quos corporis animi nemo aperiam tempore. Iure nobis inventore nesciunt necessitatibus nam quod temporibus blanditiis minima. Est, neque officia?
-        </div>
-        <div class="modal-footer text-bg-dark">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
+
 <!-- ---- Bootstrap JS ---- -->
 <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
